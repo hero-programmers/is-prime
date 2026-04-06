@@ -1,5 +1,5 @@
 {
-	"name": "@hp/is-prime",
+	"name": "@hprogrammers/is-prime",
 	"description": "Is it a prime number?",
 	"version": "1.0.0",
 	"module": "index.ts",
@@ -18,7 +18,7 @@
 		"url": "git+https://github.com/hero-programmers/is-prime.git"
 	},
 	"keywords": [
-		"even"
+		"prime"
 	],
 	"author": "Hero Programmers",
 	"license": "MIT",
