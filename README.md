@@ -1,7 +1,21 @@
-# is-prime
+# is-prime [![npm](https://img.shields.io/npm/v/@hprogrammers/is-prime)](https://www.npmjs.com/package/@hprogrammers/is-prime)
 > Is 57 a prime number?
 > hopefully, { prime: false }
 
+## Install
+Install with [npm](https://www.npmjs.com/)
+```sh
+$ npm install @hprogrammers/is-prime
+```
+
+## How to use it
+```js
+import isPrime from '@hprogrammers/is-prime';
+
+isPrime(1); //false
+isPrime(2); //true
+isPrime(3); //true
+```
 ## About
 This is also a 1009% (as 1000 is not a prime) serious project like the [is-even](https://github.com/samuelmarina/is-even) project. Currently it can't check all the prime numbers, hopefully someday it will...
 
