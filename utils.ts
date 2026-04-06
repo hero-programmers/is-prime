@@ -2,16 +2,19 @@
  * Converts a string representation of a number (words or digits) to a numeric value.
  * Supports single words (e.g., "two"), compound numbers (e.g., "twenty one"),
  * and large numbers (e.g., "one million", "two thousand").
- * 
+ *
  * @param input - The string to convert (e.g., "two", "100", "twenty one")
- * @returns The numeric value, or false if conversion is not possible
+ * @returns The numeric value, or object with error if conversion is not possible
  * @example
- * convertWordToNum("two")       // returns 2
- * convertWordToNum("twenty one") // returns 21
- * convertWordToNum("one thousand") // returns 1000
- * convertWordToNum("hello")    // returns false
+ * convertWordToNum("two")       // returns { value: 2 }
+ * convertWordToNum("twenty one") // returns { value: 21 }
+ * convertWordToNum("one thousand") // returns { value: 1000 }
+ * convertWordToNum("hello")    // returns { value: false, error: "Could not convert..." }
  */
-export function convertWordToNum(input: string): number | boolean {
+export function convertWordToNum(input: string): {
+  value: number | boolean;
+  error?: string;
+} {
   const wordToNumberMap: Record<string, number> = {
     zero: 0,
     one: 1,
@@ -51,12 +54,12 @@ export function convertWordToNum(input: string): number | boolean {
   const lowercasedInput = input.toLowerCase().trim();
 
   if (wordToNumberMap[lowercasedInput] !== undefined) {
-    return wordToNumberMap[lowercasedInput];
+    return { value: wordToNumberMap[lowercasedInput] };
   }
 
   const parsedNumber = Number(lowercasedInput);
   if (!isNaN(parsedNumber)) {
-    return parsedNumber;
+    return { value: parsedNumber };
   }
 
   const words = lowercasedInput.split(/[\s-]+/);
@@ -66,7 +69,7 @@ export function convertWordToNum(input: string): number | boolean {
 
   for (const word of words) {
     if (word === "and") continue;
-    
+
     if (word === "hundred" && current > 0) {
       current *= 100;
     } else if (word === "thousand") {
@@ -85,8 +88,8 @@ export function convertWordToNum(input: string): number | boolean {
 
   if (hasValidNumber) {
     result = current;
-    return result;
+    return { value: result };
   }
 
-  return false;
+  return { value: false, error: `Could not convert "${input}" to a number` };
 }
