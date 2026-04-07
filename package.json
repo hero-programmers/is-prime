@@ -1,7 +1,7 @@
 {
 	"name": "@hprogrammers/is-prime",
 	"description": "Is it a prime number?",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"module": "index.ts",
 	"type": "module",
 	"exports": {
