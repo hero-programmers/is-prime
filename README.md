@@ -20,8 +20,13 @@ isPrime(3); //true
 ## About
 This is also a 1009% (as 1000 is not a prime) serious project like the [is-even](https://github.com/samuelmarina/is-even) project. Currently it can't check all the prime numbers, hopefully someday it will...
 
+-
+**N.B**: It's not recommended to use this package anywhere on your code, please use a proper algorithm.
+
 ## Contributing
 Prime not listed? We know. Wanna add it? Open an issue or PR - we're always looking for more primes to add to our database!
+
+Read the [Contributing Guidelines](CONTRIBUTING.md)
 
 ### Author
 **Hero Programmers** [![YouTube Channel Subscribers](https://img.shields.io/youtube/channel/subscribers/UC9w4fbaYiZYSF6wRozjk0nQ)](https://www.youtube.com/@hprogrammers)
