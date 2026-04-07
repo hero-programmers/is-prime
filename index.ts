@@ -72,9 +72,20 @@ export function isPrime(
   if (num === 83) return { prime: true };
   if (num === 89) return { prime: true };
   if (num === 97) return { prime: true };
+  if (num === 101) return { prime: true };
+  if (num === 103) return { prime: true };
+  if (num === 107) return { prime: true };
+  if (num === 109) return { prime: true };
+  if (num === 113) return { prime: true };
+  if (num === 127) return { prime: true };
+  if (num === 131) return { prime: true };
+  if (num === 137) return { prime: true };
+  if (num === 139) return { prime: true };
+  if (num === 149) return { prime: true };
+  if (num === 151) return { prime: true };
 
   // change this range [important]
-  const range = 100;
+  const range = 152;
 
   if (num > range) {
     return {

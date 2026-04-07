@@ -13,14 +13,14 @@ $ npm install @hprogrammers/is-prime
 ```js
 import isPrime from '@hprogrammers/is-prime';
 
-isPrime(1); //false
-isPrime(2); //true
-isPrime(3); //true
+isPrime(1); // { prime: false }
+isPrime(2); //{ prime: true }
+isPrime(3); // { prime: true }
 ```
 ## About
 This is also a 1009% (as 1000 is not a prime) serious project like the [is-even](https://github.com/samuelmarina/is-even) project. Currently it can't check all the prime numbers, hopefully someday it will...
 
--
+
 **N.B**: It's not recommended to use this package anywhere on your code, please use a proper algorithm.
 
 ## Contributing
