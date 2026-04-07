@@ -83,9 +83,34 @@ export function isPrime(
   if (num === 139) return { prime: true };
   if (num === 149) return { prime: true };
   if (num === 151) return { prime: true };
+  if (num === 157) return { prime: true };
+  if (num === 163) return { prime: true };
+  if (num === 167) return { prime: true };
+  if (num === 173) return { prime: true };
+  if (num === 179) return { prime: true };
+  if (num === 181) return { prime: true };
+  if (num === 191) return { prime: true };
+  if (num === 193) return { prime: true };
+  if (num === 197) return { prime: true };
+  if (num === 199) return { prime: true };
+  if (num === 211) return { prime: true };
+  if (num === 223) return { prime: true };
+  if (num === 227) return { prime: true };
+  if (num === 229) return { prime: true };
+  if (num === 233) return { prime: true };
+  if (num === 239) return { prime: true };
+  if (num === 241) return { prime: true };
+  if (num === 251) return { prime: true };
+  if (num === 257) return { prime: true };
+  if (num === 263) return { prime: true };
+  if (num === 269) return { prime: true };
+  if (num === 271) return { prime: true };
+  if (num === 277) return { prime: true };
+  if (num === 281) return { prime: true };
+  if (num === 283) return { prime: true };
 
   // change this range [important]
-  const range = 152;
+  const range = 287;
 
   if (num > range) {
     return {
