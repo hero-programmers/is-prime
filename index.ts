@@ -79,7 +79,7 @@ export function isPrime(
   if (num > range) {
     return {
       prime: false,
-      error: `Number ${n} exceeds the supported range (max: ${range})`,
+      error: `Cannot check if number (${n}) is prime`,
     };
   }
 
