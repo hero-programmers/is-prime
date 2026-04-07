@@ -108,9 +108,15 @@ export function isPrime(
   if (num === 277) return { prime: true };
   if (num === 281) return { prime: true };
   if (num === 283) return { prime: true };
+  if (num === 293) return { prime: true };
+  if (num === 307) return { prime: true };
+  if (num === 311) return { prime: true };
+  if (num === 313) return { prime: true };
+  if (num === 317) return { prime: true };
+  if (num === 331) return { prime: true };
 
   // change this range [important]
-  const range = 287;
+  const range = 333;
 
   if (num > range) {
     return {
